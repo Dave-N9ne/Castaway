@@ -1,0 +1,42 @@
+.header {
+    margin: 26px 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 67px;
+}
+.logo__img {
+    display: flex;
+}
+.nav__list {
+    display: flex;
+    gap: 40px;
+}
+.nav__link_home {
+    color: var(--turquoise-color);
+}
+.nav__link {
+    font-size: 17px; 
+    line-height: 1.58824;
+}
+.nav__link_contact {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.header__button {
+    display: none;
+    border: none;
+    background-color: var(--theme-color); /* не знал как убрать белый фон. так, что сделал так */
+}
+
+@media (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+    .header__button {
+        display: block;
+    }
+    
+    
+}
