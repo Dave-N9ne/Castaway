@@ -1,4 +1,4 @@
-@media (max-width: 1250px) {
+@media (max-width: 1250px) {  /* половина времени ушло только на адаптацию */
     .hero .container {
         flex-direction: column;
         align-items: center;
@@ -16,7 +16,7 @@
         text-align: justify;
         letter-spacing: normal;
     }
-    .content__underline {
+    .content__title_underline {
         display: none;
     }
 }
@@ -30,9 +30,9 @@
 }
 @media (max-width: 800px) {
     .hero__item, .hero__content {
-        width: clamp(280px, 80%, 630px);
+        width: clamp(280px, 90%, 630px);
     }
-    .main-title, .content__title_underline, .content__title_bold {
+    .main-title, .content__title_next, .content__title_bold {  /* особенно с main-title'ом. почему-то между словами Take и your был отступ во всю ширину h1 */
         font-size: 45px;
     }
 }
@@ -43,7 +43,7 @@
     .hero .container {
         gap: 20px;
     }
-    .main-title, .content__title_underline, .content__title_bold {
+    .main-title, .content__title_next, .content__title_bold {
         margin-bottom: 40px;
         font-size: 35px;
     }
@@ -53,3 +53,5 @@
         padding: 0 20px;
     }
 }
+
+/*  */
