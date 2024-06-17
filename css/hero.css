@@ -46,7 +46,7 @@
     line-height: 1.1;
     letter-spacing: 0.04em;
 }
-.content__title_underline{ /* я знаю, что это, скорее всего, ужасно, но других вариантов я не придумал */
+.content__title_underline{    /* я знаю, что это, скорее всего, ужасно, но других вариантов я не придумал */
     position: absolute;
     bottom: -5px;
     left: -5px;
@@ -61,12 +61,8 @@
     line-height: 24px;
 }
 .socials {
-    display: flex;
     gap: 17px;
     height: 32px;
-}
-.socials__item {
-    display: flex;  /* применил, чтобы тег а не съезжал вниз и вытянулся на всю ширину родителя */
 }
 
 /*  */
