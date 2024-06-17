@@ -13,9 +13,6 @@
     display: flex;
     gap: 40px;
 }
-.nav__link_home {
-    color: var(--turquoise-color);
-}
 .nav__link {
     font-size: 17px; 
     line-height: 1.58824;
@@ -24,19 +21,12 @@
     font-size: 18px;
     line-height: 1.5;
 }
+.nav__link:hover {
+    color: var(--turquoise-color);
+    transition: 0.2s ease-in-out;
+}
 .header__button {
     display: none;
     border: none;
     background-color: var(--theme-color); /* не знал как убрать белый фон. так, что сделал так */
-}
-
-@media (max-width: 1024px) {
-    .header__nav {
-        display: none;
-    }
-    .header__button {
-        display: block;
-    }
-    
-    
 }
