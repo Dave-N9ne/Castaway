@@ -3,6 +3,8 @@
 @import "./vars.css";
 @import "./utils.css";
 @import "./header.css";
+@import "./hero.css";
+@import "./media.css";
 
 body {
     font-family: "DM Sans", sans-serif;
@@ -10,6 +12,9 @@ body {
     color: var(--text-color);
     font-size: 22px;
     line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
 }
 a {
     text-decoration: none;
@@ -22,9 +27,4 @@ ul, li {
     margin: auto;
     padding: 0 50px;
     max-width: 1440px;
-}
-@media (max-width: 500px) {
-    .container {
-        padding: 0 20px;
-    }
 }
