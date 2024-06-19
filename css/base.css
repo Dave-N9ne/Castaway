@@ -24,7 +24,7 @@ ul, li {
     list-style-type: none;
 }
 .container {
-    margin: auto;
-    padding: 0 50px;
+    margin: 0 auto;
+    padding: 0 70px;
     max-width: 1440px;
 }
