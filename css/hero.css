@@ -1,15 +1,16 @@
 .hero {
-    margin: 40px 22px;
+    margin: 40px 0 22px;
     position: relative;
 }
 .hero .container {   /* не знаю почему я тут так жесто тупил с отсутупами). может я тут заебался) */
-    padding: 0 100px;
-    justify-content: space-around;
+    padding-left: 94px;
+    padding-right: 46px;
+    justify-content: space-between;
     gap: 60px;
 }
 .hero__item {
     position: relative;
-    width: 630px;
+    width: 650px;
 }
 .hero__item::before {        /* тут было тяжело с этими полосками. долго думал и решил через псевдокласс сделать */
     content: url(../img/logo/blue-top-stripes.svg);
@@ -22,9 +23,9 @@
     object-fit: cover;
 }
 .hero__content {
-   margin: auto;
+   margin: auto 0;
    padding-top: 163px;
-   max-width: 526px;
+   max-width: 530px;
    min-height: 610px;
 }
 .main-title {
@@ -46,10 +47,12 @@
     line-height: 1.1;
     letter-spacing: 0.04em;
 }
-.content__title_underline{    /* я знаю, что это, скорее всего, ужасно, но других вариантов я не придумал */
+.content__title_underline {    /* я знаю, что это, скорее всего, ужасно, но других вариантов я не придумал */
     position: absolute;
-    bottom: -5px;
-    left: -5px;
+    bottom: 0px;
+    left: 0px;
+    width: 150px;
+    height: 11px;
 }
 .content__listen {
     margin-left: 22px;
