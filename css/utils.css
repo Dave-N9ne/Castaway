@@ -10,7 +10,7 @@
 
 /* ---------------BURGER--------------- */
 
-.header__burger{
+.burger-button{
   display: grid;
   align-items: center;
   grid-template: repeat(3, 8px) / 1fr;
@@ -19,7 +19,7 @@
   height: 20px;
   z-index: 10;
 }
-.header__burger::before, .header__burger::after{
+.burger-button::before, .burger-button::after{
   content: '';
   position: absolute;
   background-color: #fff;
@@ -27,13 +27,13 @@
   height: 2px;
   left: 0;
 }
-.header__burger::before{
+.burger-button::before{
   top: 0;
 }
-.header__burger::after{
+.burger-button::after{
   bottom: 0;
 }
-.header__burger span{
+.burger-button span{
   position: absolute;
   width: 100%;
   height: 2px;
