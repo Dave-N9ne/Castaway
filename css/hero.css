@@ -30,13 +30,13 @@
 }
 .main-title {
     margin-bottom: 90px;
-    position: relative;
     display: inline-block;
     font-size: 70px;
     line-height: 1.25714;
     letter-spacing: 0.05em;
 }
 .content__title_next {
+    position: relative;
     font-size: 75px;
     line-height: 1.17333;
     letter-spacing: 0.04em;
@@ -47,11 +47,12 @@
     line-height: 1.1;
     letter-spacing: 0.04em;
 }
-.content__title_underline {    /* я знаю, что это, скорее всего, ужасно, но других вариантов я не придумал */
+.content__title_next::after {    /* я знаю, что это, скорее всего, ужасно, но других вариантов я не придумал */
+    content: url(../img/logo/underline.svg);
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 150px;
+    bottom: 55px;
+    left: -2px;
+    width: 120px;
     height: 11px;
 }
 .content__listen {
@@ -67,5 +68,4 @@
     gap: 17px;
     height: 32px;
 }
-
 /*  */
