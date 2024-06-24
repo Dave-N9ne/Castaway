@@ -28,3 +28,19 @@ ul, li {
     padding: 0 70px;
     max-width: 1440px;
 }
+.button {
+    padding: 12px 22px;
+    display: inline-block;
+    text-wrap: none;
+    background-color: var(--turquoise-color);
+    border-radius: 6px;
+}
+.button:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition: 0.3s ease-in-out;
+}
+.button:active {
+    background-color: var(--black-color);
+    color: var(--turquoise-color);
+}
