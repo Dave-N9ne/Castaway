@@ -1,0 +1,73 @@
+.episodes {
+    margin-bottom: 269px;
+}
+.episodes__wrapper {
+    margin-bottom: 30.5px;
+    min-height: 99px;
+    justify-content: space-between;
+    gap: 25px;
+}
+.episodes__title {
+    align-self: flex-start;
+    font-size: 64px;
+    line-height: 1.2375;
+    letter-spacing: 0.05em;
+}
+.episodes__btn {
+    align-self: center;
+    font-size: 17px;
+    line-height: 27px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.episodes__item {
+    padding: 40px;
+    justify-content: space-between;
+    gap: 53px;
+    background-color: var(--black-color);
+    border-radius: 32px;
+    
+}
+.episodes__item__wrapper {
+    max-width: 389px;
+    max-height: 464px;
+}
+.episodes__item__img {
+    width: 389px;
+}
+.episodes__content {
+    padding-top: 7.5px;
+    max-width: 778px;
+}
+.episodes__content__slogan {
+    margin-bottom: 48px;
+    padding: 0 16px;
+    display: inline-block;
+    width: fit-content; /* когда я применил flex-y, то у меня этот элемент вытянулся на всю ширину родителя. поэтому применил св-во */
+    background-color: var(--theme-color);
+    border-radius: 6px;
+    font-size: 18px;
+}
+.episodes__content__link {
+    margin-bottom: 18px;
+    display: inline-block;
+    font-size: 17px;
+    color: var(--turquoise-color);
+}
+.gear-content__title {
+    font-size: 64px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+}
+.gear-content__title {
+    margin-bottom: 98px;
+}
+.episodes__content__desc{
+    margin-bottom: 18px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.episodes__content__btn {
+    font-size: 18px;
+    max-width: fit-content; /* тут аналогично с .episodes__content__slogan */
+}
+/*   */
