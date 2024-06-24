@@ -20,6 +20,16 @@
     .content__title_next::after {
         display: none;
     }
+    .episodes__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .episodes__item__img {
+        width: 100%;
+    }
+    .episodes__content__title {
+        margin-bottom: 54px;
+    }
 }
 @media (max-width: 1200px) {
     .header__nav {
@@ -28,6 +38,16 @@
     .burger-button {
         display: block;
     }   
+}
+@media (max-width: 991.98px) { /* некоторые медиа я решил сделать по популярным точкам переломов с section.episodes */
+    .episodes__content__slogan {
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+    .episodes__title {
+        align-self: center;
+        font-size: 50px;
+    }
 }
 @media (max-width: 800px) {
     .header .container {
@@ -44,24 +64,81 @@
         font-size: 45px;
         line-height: 1.2;
     }
+    .episodes__title {
+        font-size: 35px;
+    }
+}
+@media (max-width: 767.98px) { /* думал насчет отступов у slogan и link при адапции. остановился на значениях, которые собственно и записаны */
+    .episodes .container {
+        padding: 0 20px;
+    }
+    .episodes__wrapper {
+        margin-bottom: 34px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .episodes__title {
+        align-self: center;
+        font-size: 35px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .episodes__item {
+        padding: 20px;
+        gap: 36px;
+        border-radius: 10px;
+    }
+    .episodes__content__slogan {
+        margin-bottom: 12px;
+    }
+    .episodes__content__title {
+       font-size: 35px;
+    }
+    .episodes__content__desc {
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
 }
 @media (max-width: 700px) {
     .hero__item::before {
         display: none;
     }
-    /* .hero .container {
-        gap: 8px;
-    } */
     .main-title, .content__title_next, .content__title_bold {
         margin-bottom: 30px;
         font-size: 35px;
+    }
+}
+@media (max-width: 575.98px) {
+    .episodes__content__slogan {
+        font-size: 16px;
+    }
+    .episodes__content__link {
+        font-size: 13px;
+    }
+    .episodes__content__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .episodes__content__desc {
+        font-size: 16px;
+    }
+    .episodes__content__btn {
+        font-size: 12px;
     }
 }
 @media (max-width: 500px) {
     .container {
         padding: 0 20px;
     }
+    .hero__img {
+        height: 50%;
+    }
     .main-title, .content__title_next, .content__title_bold {
         margin-bottom: 20px;
     }
+    .episodes__content__desc {
+        font-size: 12px;
+    }
 }
+/*  */
