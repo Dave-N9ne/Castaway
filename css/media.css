@@ -1,3 +1,11 @@
+@media (min-width: 1251px) {
+    .episodes__item__wrapper {
+        max-width: 389px;
+    }
+    .episodes__item__img {
+        height: 100%;
+    }
+}
 @media (max-width: 1250px) {
     .hero .container {
         padding: 0;
@@ -20,16 +28,24 @@
     .content__title_next::after {
         display: none;
     }
-    .episodes__item {
-        flex-direction: column;
-        align-items: center;
+    .episodes__item__wrapper {
+        max-width: 389px;
     }
     .episodes__item__img {
-        width: 100%;
+        max-width: 389px;
+        height: 100%;
+    }
+    .episodes__content__slogan {
+        margin-bottom: 24px;
     }
     .episodes__content__title {
-        margin-bottom: 54px;
+        margin-bottom: 28px;
+        font-size: 40px;
     }
+    .episodes__content__desc {
+        margin-bottom: 24px;
+        font-size: 16px;
+    }   
 }
 @media (max-width: 1200px) {
     .header__nav {
@@ -37,16 +53,32 @@
     }
     .burger-button {
         display: block;
-    }   
+    }
 }
 @media (max-width: 991.98px) { /* некоторые медиа я решил сделать по популярным точкам переломов с section.episodes */
+    .episodes__item__wrapper {
+        max-width: 100%;
+    }
+    .episodes__item__img {
+        max-width: 100%;
+        max-height: 400px;
+    }
     .episodes__content__slogan {
-        margin-bottom: 24px;
         font-size: 18px;
     }
     .episodes__title {
         align-self: center;
         font-size: 50px;
+    }
+    .episodes__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .episodes__content {
+        max-width: 100%;
+    }
+    .episodes__item__img {
+        position: relative;
     }
 }
 @media (max-width: 800px) {
@@ -84,13 +116,19 @@
     .button {
         font-size: 14px;
     }
+    .episodes__list {
+        gap: 25px;
+    }
     .episodes__item {
         padding: 20px;
         gap: 36px;
         border-radius: 10px;
     }
+    .episodes__item__img {
+        max-height: 300px;
+    }
     .episodes__content__slogan {
-        margin-bottom: 12px;
+        margin-bottom: 14px;
     }
     .episodes__content__title {
        font-size: 35px;
@@ -110,6 +148,13 @@
     }
 }
 @media (max-width: 575.98px) {
+    .episodes__item {
+        gap: 20px;
+    }
+    .episodes__item__img {
+        max-width: 100%;
+        max-height: 200px;
+    }
     .episodes__content__slogan {
         font-size: 16px;
     }
