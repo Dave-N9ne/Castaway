@@ -91,10 +91,10 @@
                     <h2 class="episodes__title">Latest episodes</h2>
                     <a href="#" class="episodes__btn button">View all episodes</a> <!-- кст, св-ва .button прописаны в base.css  -->
                 </div>
-                <ul class="episodes__list">
-                    <li class="episodes__item flex-x">
-                        <div class="episodes__item__wrapper">
-                            <img src="./img/gear-episode3-img.webp" alt="hardware being on" class="episodes__item__img">
+                <ul class="episodes__list flex-y">
+                    <li class="episodes__item episodes-item-gear episodes-gear flex-x">
+                        <div class="episodes__item__wrapper episodes-gear__wrapper">
+                            <img src="./img/gear-episode3-img.webp" alt="hardware being on" class="episodes__item__img episodes-gear__img">
                         </div>
                         <article class="episodes__content episodes-content gear-content flex-y"> <!-- добавил кучу доп. классов т.к. на элементы навешаны разные св-ва -->
                             <span class="episodes__content__slogan gear-content__slogan">Gear</span> 
@@ -106,8 +106,36 @@
                             <a href="#" class="episodes__content__btn button">View Episode Details</a>
                         </article>
                     </li>
+                    <li class="episodes__item episodes-item-tips episodes-tips flex-x">
+                        <div class="episodes__item__wrapper episodes-tips__wrapper">
+                            <img src="./img/tips-&-tricks-img.webp" alt="hardware being on" class="episodes__item__img">
+                        </div>
+                        <article class="episodes__content episodes-content tips-content flex-y">
+                            <span class="episodes__content__slogan tips-content__slogan">Tips & Tricks</span> 
+                            <a href="#" class="episodes__content__link tips-content__link">Episode 2</a>
+                            <h3 class="episodes__content__title tips-content__title">Mic tricks to take you to the next level</h3>
+                            <p class="episodes__content__desc tips-content__desc">
+                                Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.
+                            </p>
+                            <a href="#" class="episodes__content__btn button">View Episode Details</a>
+                        </article>
+                    </li>
+                    <li class="episodes__item episodes-item-mic episodes-mic flex-x">
+                        <div class="episodes__item__wrapper">
+                            <img src="./img/gear-episode1-img.webp" alt="hardware being on" class="episodes__item__img">
+                        </div>
+                        <article class="episodes__content episodes-content mic-content flex-y">
+                            <span class="episodes__content__slogan mic-content__slogan">Gear</span> 
+                            <a href="#" class="episodes__content__link mic-content__link">Episode 1</a>
+                            <h3 class="episodes__content__title mic-content__title">The best microphone under $200</h3>
+                            <p class="episodes__content__desc mic-content__desc">
+                                With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.
+                            </p>
+                            <a href="#" class="episodes__content__btn button">View Episode Details</a>
+                        </article>
+                    </li>
                 </ul>
-            </div> <!-- container -->
+            </div>
         </section>
     </main>
     
